@@ -21,8 +21,8 @@ const Header = () => {
         variant="dark"
        >
         <Container>
-          <Navbar.Brand as={Link} to="/"><img src={logo} width="80px" className="me-5 p-2" alt="" />
-            Smart Electronics</Navbar.Brand>
+          <Navbar.Brand as={Link} to="/"><img src={logo} width="80px" className="me-4 p-1" alt="" />
+            <span className='fs-2 fw-bold'>Smart Electronics</span></Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
           <Nav>
@@ -49,8 +49,8 @@ const Header = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-            <Nav.Link href="/recommendation">Recommendation</Nav.Link>
-            <Nav.Link href="#pricing">Blog</Nav.Link>
+            <Nav.Link as={Link} to="/recommendation">Recommendation</Nav.Link>
+            <Nav.Link as={Link} to="/blogs">Blog</Nav.Link>
             </Nav>
             <Nav>
             <Nav.Link href="#deets">Manage Items</Nav.Link>
