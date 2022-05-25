@@ -7,7 +7,6 @@ import "./Login.css";
 import SocialLogin from "./SocialLogin/SocialLogin";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { async } from "@firebase/util";
 import axios from "axios";
 import { Form } from "react-bootstrap";
 const Login = () => {
@@ -33,7 +32,7 @@ const Login = () => {
     await signInWithEmailAndPassword(email, password);
 
     const { data } = await axios.post(
-      `https://mercedez-warehouse.herokuapp.com/login`,
+      `https://young-thicket-66309.herokuapp.com/login`,
       { email }
     );
     localStorage.setItem("token", data.token);
