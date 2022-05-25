@@ -1,13 +1,20 @@
 import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from '@fortawesome/free-solid-svg-icons'
+import { faUser, faUserCheck } from '@fortawesome/free-solid-svg-icons'
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 import logo from '../../../logo.png';
 import './Header.css'
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { signOut } from 'firebase/auth';
+import auth from '../../../firebase.init';
 
 
 const Header = () => {
+    const [user] = useAuthState(auth);
+  const handleSignOut = () => {
+    signOut(auth);
+  };
     return (
         <>
         <Navbar bg="dark"
@@ -19,7 +26,12 @@ const Header = () => {
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
           <Nav>
-                <Nav.Link as={Link} to="/login" className="fs-4 bg-dark text-light"><FontAwesomeIcon icon={faUser} /></Nav.Link>
+          {user ? (
+                <Nav.Link onClick={handleSignOut} className="fs-4 bg-dark text-light"><FontAwesomeIcon icon={faUserCheck} /></Nav.Link>
+              ) : (
+                <Nav.Link as={Link} to="/login" className="fs-4 bg-dark text-light"><FontAwesomeIcon icon={faUser} />
+                </Nav.Link>
+              )}
             </Nav>
           </Navbar.Collapse>
         </Container>
