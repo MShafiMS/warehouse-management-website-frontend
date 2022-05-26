@@ -13,6 +13,7 @@ import NotFound from './Pages/NotFound/NotFound';
 import ManageItem from './Pages/ManageItem/ManageItem';
 import AddItem from './Pages/AddItem/AddItem';
 import MyItem from './Pages/MyItem/MyItem';
+import CarUpdate from './Pages/CarUpdate/CarUpdate';
 
 function App() {
   return (
@@ -21,6 +22,14 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/recommendation' element={<Recommendation></Recommendation>}></Route>
+        <Route
+          path="/car/:_id"
+          element={
+            <RequireAuth>
+              <CarUpdate></CarUpdate>
+            </RequireAuth>
+          }
+        ></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path="/signup" element={<SignUp></SignUp>}></Route>

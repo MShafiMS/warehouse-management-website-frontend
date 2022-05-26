@@ -9,6 +9,8 @@ const ManageItem = () => {
   const [cars, setCars] = useCars();
 
   const removeItem = (id) => {
+    const proceed = window.confirm('Are you sure you want to delete?');
+    if(proceed){
     fetch(`https://young-thicket-66309.herokuapp.com/car/${id}`, {
       method: "DELETE",
     })
@@ -17,6 +19,7 @@ const ManageItem = () => {
         const remaining = cars.filter((car) => car._id !== id);
         setCars(remaining);
       });
+    }
   };
 
 
@@ -59,7 +62,7 @@ const ManageItem = () => {
         </Table>
       </div>
       <div className="add-item">
-        <Link to={"/addInventoryItem"} className="link">
+        <Link to={"/addinventories"} className="link">
           {" "}
           Add New Item +{" "}
         </Link>

@@ -7,7 +7,6 @@ import useUserCars from '../../Hooks/useUserCars';
 import './MyItem.css'
 const MyItem = () => {
     const [userCars, setUserCars] = useUserCars();
-  
     const removeItem = (id) => {
       fetch(`https://young-thicket-66309.herokuapp.com/car/${id}`, {
         method: "DELETE",
@@ -35,7 +34,7 @@ const MyItem = () => {
                 <th>Action</th>
               </tr>
             </thead>
-  
+
             <tbody className="align-middle">
               {userCars.map((car) => (
                 <tr key={car._id}>
@@ -59,7 +58,7 @@ const MyItem = () => {
           </Table>
         </div>
         <div className="add-item">
-          <Link to={"/addInventoryItem"} className="link">
+          <Link to={"/addinventories"} className="link">
             {" "}
             Add New Item +{" "}
           </Link>

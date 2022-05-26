@@ -8,7 +8,6 @@ const useUserCars = () => {
   useEffect(() => {
     const email = user.email;
     const url=`https://young-thicket-66309.herokuapp.com/userCar?email=${email}`
-    console.log(url);
     fetch(url)
       .then((res) => res.json())
       .then((data) => setUserCars(data));
