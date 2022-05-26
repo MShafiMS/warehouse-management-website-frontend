@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTrashArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { faBan, faCircleMinus, faMinus, faTrashArrowUp } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import { Table } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -53,7 +53,7 @@ const ManageItem = () => {
                     onClick={() => removeItem(car._id)}
                     className="remove"
                   >
-                    <FontAwesomeIcon icon={faTrashArrowUp} />
+                    <FontAwesomeIcon icon={faBan} />
                   </button>
                 </td>
               </tr>

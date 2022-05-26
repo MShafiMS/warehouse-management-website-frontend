@@ -52,25 +52,25 @@ const AddItem = () => {
       <div className="form-container">
         <Form onSubmit={addNewItem}>
           <Form.Group className="m-3">
-            <Form.Label>Enter Car Name</Form.Label>
+            <Form.Label>Enter TV Name</Form.Label>
             <Form.Control
               type="text"
-              placeholder="Example : C-Class"
+              placeholder="Example : SMART-QLED"
               required
               onBlur={onNameBlur}
             />
           </Form.Group>
           <Form.Group className="m-3">
-            <Form.Label>Enter Car Price</Form.Label>
+            <Form.Label>Enter TV Price</Form.Label>
             <Form.Control
               type="number"
-              placeholder="Example : &#x20B9; 10000000"
+              placeholder="Example : &#x09F3; 10000000"
               required
               onBlur={onPriceBlur}
             />
           </Form.Group>
           <Form.Group className="m-3">
-            <Form.Label>Enter Car Quantity</Form.Label>
+            <Form.Label>Enter TV Quantity</Form.Label>
             <Form.Control
               type="number"
               placeholder="Example : 200"
@@ -79,16 +79,16 @@ const AddItem = () => {
             />
           </Form.Group>
           <Form.Group className="m-3">
-            <Form.Label>Car Details</Form.Label>
+            <Form.Label>TV Details</Form.Label>
             <Form.Control
               type="text"
-              placeholder="Details about car"
+              placeholder="Details about TV"
               required
               onBlur={onDetailsBlur}
             />
           </Form.Group>
           <Form.Group className="m-3">
-            <Form.Label>Car Image URL</Form.Label>
+            <Form.Label>TV Image URL</Form.Label>
             <Form.Control
               type="url"
               placeholder="https://example.com"

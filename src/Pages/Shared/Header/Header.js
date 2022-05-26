@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser, faUserCheck } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRightFromBracket, faArrowRightToBracket, faRightToBracket, faUser, faUserCheck } from '@fortawesome/free-solid-svg-icons'
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 import logo from '../../../logo.png';
@@ -27,9 +27,9 @@ const Header = () => {
           <Navbar.Collapse className="justify-content-end">
           <Nav>
           {user ? (
-                <Nav.Link onClick={handleSignOut} className="fs-4 bg-dark text-light"><FontAwesomeIcon icon={faUserCheck} /></Nav.Link>
+                <Nav.Link onClick={handleSignOut} className="fs-4 bg-dark text-light"><FontAwesomeIcon icon={faArrowRightFromBracket} /></Nav.Link>
               ) : (
-                <Nav.Link as={Link} to="/login" className="fs-4 bg-dark text-light"><FontAwesomeIcon icon={faUser} />
+                <Nav.Link as={Link} to="/login" className="fs-4 bg-dark text-light"><FontAwesomeIcon icon={faArrowRightToBracket} />
                 </Nav.Link>
               )}
             </Nav>

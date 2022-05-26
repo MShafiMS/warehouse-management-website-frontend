@@ -62,7 +62,7 @@ const CarUpdate = () => {
           <img src={car.images} alt="" />
           <div className="details-info">
             <h1>{car.name}</h1>
-            <p>starting from &#x20B9; {car.price}</p>
+            <p>starting from &#x09F3; {car.price}</p>
             <p>Available cars {car.quantity}</p>
             <button onClick={delivered} className="button">
               delivered
