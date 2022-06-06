@@ -1,8 +1,8 @@
-## Project name: Dewalt Tools Manufacturer
+## Project name: Smart Electronics Warehouse
 
-## Project Front-end git repository name:manufacturer-website-client-side-MShafiMS
+## Project Front-end git repository name:warehouse-management-website-frontend
 
-## Project Back-end git repository name:manufacturer-website-server-side-MShafiMS
+## Project Back-end git repository name:warehouse-management-website-backend
 
 ## [Live Website](https://warehose-management-website.web.app/)
 
