@@ -1,11 +1,26 @@
- ## Website name: Smart Electronics Warehouse
+## Project name: Dewalt Tools Manufacturer
 
+## Project Front-end git repository name:manufacturer-website-client-side-MShafiMS
 
- ### Live site link: https://warehose-management-website.web.app/
+## Project Back-end git repository name:manufacturer-website-server-side-MShafiMS
 
- ### Website's different features and functionality:
- * In this website I've used one of the best authentication system for login
- * In this website there is also jwt system to secure website more.
- * There is MongoDB database system for website database which makes website more reliable
- * I've used on of the best server side framework Express.js for the server side.
- * Last but not the lest, I've used worlds best front-end library for the website.
+## [Live Website](https://warehose-management-website.web.app/)
+
+Live WebsiteLink: [https://warehose-management-website.web.app/](https://warehose-management-website.web.app/)
+
+## Project Overview:
+
+- This is a full-stack Warehouse Management Website that multiple users can use.
+- Users are also allowed to login and sign up.
+- Users can access it through social network(Google).
+- Users can add or delete items from inventory.
+- Users can update the quantity of products and sell information.
+- A authorized user can restock the quantity of products and manage his products
+
+## Used Technology
+
+- React, React Bootstrap.
+- React Firebase Hooks, React Router DOM, Private Route.
+- Firebase Authentication.
+- Node,Express,JSON Web Token(JWT).
+- MongoDB.
